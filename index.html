@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Гірські котеджі ANASOL у Славську - ідеальний відпочинок у Карпатах. Комфортні номери з камінами, джакузі та панорамними видами. Бронюйте свій відпочинок вже сьогодні!">
-    <meta name="keywords" content="готелі Славсько, котеджі Карпати, відпочинок у горах, ANASOLslavsko, бронювання котеджів, гірський відпочинок">
+    <meta name="keywords" content="готелі Славсько,котедж з басейном, котедж з чаном, садиба з чаном, котеджі Карпати, відпочинок у горах, ANASOLslavsko, бронювання котеджів, гірський відпочинок">
     <meta name="author" content="ANASOLslavsko">
     <meta property="og:title" content="Відпочинок у Карпатах | Гірські котеджі ANASOL">
     <meta property="og:description" content="Комфортні котеджі з камінами у серці Карпат. Ідеальне місце для відпочинку та релаксу.">
@@ -36,7 +36,7 @@
         <div class="hero-content fade-in">
             <h1>Знайдіть свій ідеальний відпочинок у Карпатах</h1>
             <p>Насолоджуйтесь чистим гірським повітрям, неперевершеними краєвидами та комфортом наших номерів</p>
-            <a href="#booking" class="hero-btn">Забронювати зараз</a>
+            <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="hero-btn">Забронювати зараз</a>
         </div>
     </section>
     
@@ -48,105 +48,164 @@
         <div class="about-content fade-in delay-1">
             <h2 class="section-title">В нашій садибі</h2>
             <p class="section-subtitle">Комфорт серед природи</p>
-            <p>Наша садиба розташована в самому серці Карпат, оточені смерековими лісами та мальовничими горами. Ми пропонуємо унікальне поєднання традиційного гуцульського стилю з сучасними зручностями.</p>
+            <p>Наша садиба розташована в самому серці Карпат, оточені смерековими лісами та мальовничими горами.</p>
             <p>Кожен номер створений з натуральних матеріалів, що створює особливу атмосферу тепла та затишку.</p>
         </div>
     </section>
     
     <!-- Номери -->
-    <section class="rooms" id="rooms">
-        <div class="rooms-header fade-in">
-            <h2 class="section-title">Наші номери</h2>
-            <p class="section-subtitle">Оберіть ідеальний варіант для вашого відпочинку</p>
-        </div>
-        <div class="room-cards">
-            <!-- Номер 1 -->
-            <div class="room-card fade-in">
-                <div class="room-img">
-                    <img src="./img/nomer1.jpg" alt="Стандартний номер у ANASOL Славсько">
-                </div>
-                <div class="room-info">
-                    <h3 class="room-title">Номер із 2 спальнями</h3>
-                    <div class="room-price">ціна за домовленістю</div>
-                    <div class="room-features">
-                        <div class="feature"><i class="fas fa-user"></i> 4 гості</div>
-                        <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
-                        <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
-                    </div>
-                    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
+   <section class="rooms" id="rooms">
+    <div class="rooms-header fade-in">
+        <h2 class="section-title">Наші номери</h2>
+        <p class="section-subtitle">Оберіть ідеальний варіант для вашого відпочинку</p>
+    </div>
+    <div class="room-cards">
+        <!-- Номер 1 -->
+       <div class="room-card fade-in">
+  <div class="room-img">
+    <img src="./img/nomer1.jpg" alt="Стандартний номер у ANASOL Славсько" class="main-room-img" onclick="openModal(this)">
+  </div>
+
+  <!-- ДОДАНО: Мініатюри -->
+  <div class="thumbnail-container">
+    <img src="./img/nomer1_1.jpg" alt="Фото кімнати 1" class="room-thumbnail" onclick="openModal(this)">
+    <img src="./img/nomer1_2.jpg" alt="Фото кімнати 2" class="room-thumbnail" onclick="openModal(this)">
+  </div>
+
+  <div class="room-info">
+    <h3 class="room-title">Сімейна студія з 2 спальнями</h3>
+    <div class="room-price">Ціна за домовленістю</div>
+    <div class="room-features">
+        <div class="feature"><i class="fas fa-ruler"></i>60 м²</div>
+      <div class="feature"><i class="fas fa-user"></i> 4+1 гості</div>
+      <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
+      <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
+    </div>
+    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
+  </div>
+</div>
+
+        <!-- Номер 2 -->
+        <div class="room-card fade-in delay-1">
+            <div class="room-img">
+                <img src="./img/nomer2.jpg" alt="Напівлюкс з каміном у ANASOL" class="main-room-img" onclick="openModal(this)">
+                <div class="thumbnail-container">
+                    <img src="./img/nomer2-thumb1.jpg" alt="Напівлюкс вид 2" class="room-thumbnail" onclick="openModal(this)">
+                    <img src="./img/nomer2-thumb2.jpg" alt="Напівлюкс вид 3" class="room-thumbnail" onclick="openModal(this)">
                 </div>
             </div>
-            
-            <!-- Номер 2 -->
-            <div class="room-card fade-in delay-1">
-                <div class="room-img">
-                    <img src="./img/nomer2.jpg" alt="Напівлюкс з каміном у ANASOL">
+             <!-- ДОДАНО: Мініатюри -->
+  <div class="thumbnail-container">
+    <img src="./img/nomer2-1.jpg" alt="Фото кімнати 1" class="room-thumbnail" onclick="openModal(this)">
+    <img src="./img/nomer2-2.jpg" alt="Фото кімнати 2" class="room-thumbnail" onclick="openModal(this)">
+  </div>
+            <div class="room-info">
+                <h3 class="room-title">Блок три номера з кухнею</h3>
+                <div class="room-price">Ціна за домовленістю</div>
+                <div class="room-features">
+                    <div class="feature"><i class="fas fa-ruler"></i>80 м²</div>
+                    <div class="feature"><i class="fas fa-user"></i> 6 гості</div>
+                    <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
+                    <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
                 </div>
-                <div class="room-info">
-                    <h3 class="room-title">Номер із 3 спальнями</h3>
-                    <div class="room-price">Ціна за домовленістю</div>
-                    <div class="room-features">
-                        <div class="feature"><i class="fas fa-user"></i> 6 гості</div>
-                         <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
-                        <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
-                        
-                       
-                    </div>
-                    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
-                </div>
-            </div>
-            
-            <!-- Номер 3 -->
-            <div class="room-card fade-in delay-2">
-                <div class="room-img">
-                    <img src="./img/nomer3.png" alt="Президентський люкс у ANASOL Славсько">
-                </div>
-                <div class="room-info">
-                    <h3 class="room-title">Сімейний номер з видом на гори</h3>
-                    <div class="room-price">Ціна за домовленістю</div>
-                    <div class="room-features">
-                        <div class="feature"><i class="fas fa-user"></i> 4 гості</div>
-                         <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
-                        <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
-                    </div>
-                    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
-                </div>
-                
-            </div>
-             <div class="room-card fade-in delay-2">
-                <div class="room-img">
-                    <img src="./img/nomer5.png" alt="Президентський люкс у ANASOL Славсько">
-                </div>
-                <div class="room-info">
-                    <h3 class="room-title">Сімейний номер </h3>
-                    <div class="room-price">Ціна за домовленістю</div>
-                    <div class="room-features">
-                        <div class="feature"><i class="fas fa-user"></i> 4 гості</div>
-                         <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
-                        <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
-                    </div>
-                    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
-                </div>
-                
-            </div>
-            
-             <div class="room-card fade-in delay-2">
-                <div class="room-img">
-                    <img src="./img/nomer4.png" alt="Президентський люкс з терасою">
-                </div>
-                <div class="room-info">
-                    <h3 class="room-title">Сімейний номер зі спільною ванною кімнатою
-</h3>
-                    <div class="room-price">Ціна за домовленістю</div>
-                    <div class="room-features">
-                        <div class="feature"><i class="fas fa-user"></i> 6 гості</div>
-                         <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
-                        <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
-                    <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
-                </div>
+                <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
             </div>
         </div>
-    </section>
+        
+        <!-- Номер 3 -->
+        <div class="room-card fade-in delay-2">
+            <div class="room-img">
+                <img src="./img/nomer3.png" alt="Президентський люкс у ANASOL Славсько" class="main-room-img" onclick="openModal(this)">
+                <div class="thumbnail-container">
+                    <img src="./img/nomer3-thumb1.jpg" alt="Президентський люкс вид 2" class="room-thumbnail" onclick="openModal(this)">
+                    <img src="./img/nomer3-thumb2.jpg" alt="Президентський люкс вид 3" class="room-thumbnail" onclick="openModal(this)">
+                </div>
+            </div>
+             <!-- ДОДАНО: Мініатюри -->
+  <div class="thumbnail-container">
+    <img src="./img/nomer1_1.jpg" alt="Фото кімнати 1" class="room-thumbnail" onclick="openModal(this)">
+    <img src="./img/nomer1_2.jpg" alt="Фото кімнати 2" class="room-thumbnail" onclick="openModal(this)">
+  </div>
+            <div class="room-info">
+                <h3 class="room-title">Сімейний номер з видом на гори</h3>
+                <div class="room-price">Ціна за домовленістю</div>
+                <div class="room-features">
+                    <div class="feature"><i class="fas fa-ruler"></i>30 м²</div>
+                    <div class="feature"><i class="fas fa-user"></i> 4 гості</div>
+                    <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
+                    <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
+                </div>
+                <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
+            </div>
+        </div>
+        
+        <!-- Номер 4 -->
+        <div class="room-card fade-in delay-2">
+            <div class="room-img">
+                <img src="./img/nomer5.png" alt="Президентський люкс у ANASOL Славсько" class="main-room-img" onclick="openModal(this)">
+                <div class="thumbnail-container">
+                    <img src="./img/nomer5-thumb1.jpg" alt="Сімейний номер вид 2" class="room-thumbnail" onclick="openModal(this)">
+                    <img src="./img/nomer5-thumb2.jpg" alt="Сімейний номер вид 3" class="room-thumbnail" onclick="openModal(this)">
+                </div>
+            </div>
+             <!-- ДОДАНО: Мініатюри -->
+  <div class="thumbnail-container">
+    <img src="./img/nomer1_1.jpg" alt="Фото кімнати 1" class="room-thumbnail" onclick="openModal(this)">
+    <img src="./img/nomer1_2.jpg" alt="Фото кімнати 2" class="room-thumbnail" onclick="openModal(this)">
+  </div>
+            <div class="room-info">
+                <h3 class="room-title">Сімейний номер</h3>
+                <div class="room-price">Ціна за домовленістю</div>
+                <div class="room-features">
+                    <div class="feature"><i class="fas fa-ruler"></i>30 м²</div>
+                    <div class="feature"><i class="fas fa-user"></i> 4 гості</div>
+                    <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
+                    <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
+                </div>
+                <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
+            </div>
+        </div>
+        
+        <!-- Номер 5 -->
+        <div class="room-card fade-in delay-2">
+            <div class="room-img">
+                <img src="./img/nomer4.png" alt="Президентський люкс з терасою" class="main-room-img" onclick="openModal(this)">
+                <div class="thumbnail-container">
+                    <img src="./img/nomer4-thumb1.jpg" alt="Сімейний номер зі спільною ванною кімнатою вид 2" class="room-thumbnail" onclick="openModal(this)">
+                    <img src="./img/nomer4-thumb2.jpg" alt="Сімейний номер зі спільною ванною кімнатою вид 3" class="room-thumbnail" onclick="openModal(this)">
+                </div>
+            </div>
+             <!-- ДОДАНО: Мініатюри -->
+  <div class="thumbnail-container">
+    <img src="./img/nomer1_1.jpg" alt="Фото кімнати 1" class="room-thumbnail" onclick="openModal(this)">
+    <img src="./img/nomer1_2.jpg" alt="Фото кімнати 2" class="room-thumbnail" onclick="openModal(this)">
+  </div>
+            <div class="room-info">
+                <h3 class="room-title">Сімейний номер зі спільною ванною кімнатою</h3>
+                <div class="room-price">Ціна за домовленістю</div>
+                <div class="room-features">
+                    <div class="feature"><i class="fas fa-user"></i> 6 гості</div>
+                    <div class="feature"><i class="fas fa-wifi"></i> Wi-Fi</div>
+                    <div class="feature"><i class="fas fa-tv"></i> Smart TV</div>
+                </div>
+                <a href="https://www.booking.com/hotel/ua/anasol.uk.html?label=gen173nr-1BCAso6QFCBmFuYXNvbEgzWARo6QGIAQGYASm4ARjIAQzYAQHoAQGIAgGoAgS4ArTcs8MGwAIB0gIkNzk2ZjkzNWYtMWYzOS00OTZjLTk4MDQtOWRiNTkyNjgwOWQ52AIF4AIB&sid=af21d70e28a1fcd488392eb9d6a45652&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-now">Забронювати</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Модальне вікно для перегляду фото -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<style>
+
+</style>
+
+
      <section id="gallery" class="section">
         <div class="animate">
             <h2 class="section-title">Наші краєвиди</h2>
@@ -159,6 +218,12 @@
             </div>
             <div class="gallery-item animate delay-1">
                 <img src="./img/6.jpg" alt="Дерев'яний котедж ANASOL у Славську">
+            </div>
+            <div class="gallery-item animate delay-1">
+                <img src="./img/9.jpg" alt="Карпатські гори з котеджу ANASOL">
+            </div>
+            <div class="gallery-item animate delay-1">
+                <img src="./img/10.jpg" alt="Дерев'яний котедж ANASOL у Славську">
             </div>
             <div class="gallery-item animate delay-2">
                 <img src="./img/2.jpg" alt="Затишний інтер'єр котеджу ANASOL">
@@ -178,6 +243,7 @@
             <div class="gallery-item animate delay-3">
                 <img src="./img/4.jpg" alt="Гірський котедж у Карпатах">
             </div>
+            
         </div>
         <a class="book-now" href="">Переглянути більше</a>
     </section>
@@ -251,7 +317,7 @@
                     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <div>
                         <h3>Email</h3>
-                        <p>info@karpaty-vidpochynok.com</p>
+                        <p>frigela.mariya@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -294,8 +360,8 @@
                 <h3>Контакти</h3>
                 <ul class="footer-links">
                     <li><a href="tel:+380679552447">+380 67 955 24 47</a></li>
-                    <li><a href="mailto:info@karpaty-vidpochynok.com">info@karpaty-vidpochynok.com</a></li>
-                    <li>смт Славсько, Львівська обл.</li>
+                    <li><a href="mailto:frigela.mariya@gmail.com">frigela.mariya@gmail.com</a></li>
+                    <li>смт Славсько, вул.Бойківська 15, Львівська обл.</li>
                 </ul>
             </div>
         </div>

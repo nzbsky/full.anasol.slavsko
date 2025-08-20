@@ -43,3 +43,26 @@
         fadeElements.forEach(element => {
             fadeObserver.observe(element);
         });
+         // Функція для відкриття модального вікна
+    function openModal(img) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+        
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    }
+    
+    // Функція для закриття модального вікна
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+    
+    // Закриваємо модальне вікно при кліку поза ним
+    window.onclick = function(event) {
+        var modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
